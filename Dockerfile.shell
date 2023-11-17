@@ -1,0 +1,5 @@
+# Use a base image of Debian
+FROM debian:bookworm
+
+# Start an interactive shell when the container starts
+CMD ["bash", "-i"]

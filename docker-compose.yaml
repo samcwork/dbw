@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  myshell:
+    build:
+      context: .
+      dockerfile: Dockerfile.shell
+    volumes:
+      - ./mydata:/app/data  # Mount a volume for data persistence (optional)
+    tty: true  # Enable TTY for interactive shell
+
+volumes:
+  mydata:
